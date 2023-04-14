@@ -1,0 +1,21 @@
+extraLargeArray:
+insert: 875.39 ms
+append: 16.89 ms
+
+largeArray:
+insert: 7.48 ms
+append: 748.80 us
+
+mediumArray:
+insert: 195.71 us
+append: 171.48 us
+
+smallArray:
+insert: 45.54 us
+append: 83.94 us
+
+tinyArray:
+insert: 48.07 us
+append: 80.53 us 
+
+I thought for most of the time that append would be quicker vs the insert function because append is technically putting it where ever it wants vs insert you can choose possibly taking more time. This looks like it is only the case where the array's are smaller (sub 100 items) vs being larger items. I dont really know why that is but it is interesting to me for sure. I would say append scales better because of the smaller run time.
